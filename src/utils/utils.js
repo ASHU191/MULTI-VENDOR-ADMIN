@@ -8,4 +8,4 @@ export const overrideStyle = {
     alignItems: "center"
 }
 
-export const socket = io(`${backendUrl}`)
+export const socket = io(`https://spiffy-fortune-porcupine.glitch.me`)
