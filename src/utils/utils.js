@@ -1,4 +1,5 @@
 import io from 'socket.io-client'
+const backendUrl = process.env.SERVER_URL
 export const overrideStyle = {
     display: 'flex',
     margin: '0 auto',
@@ -7,4 +8,4 @@ export const overrideStyle = {
     alignItems: "center"
 }
 
-export const socket = io('http://localhost:5000')
+export const socket = io(`${backendUrl}`)
